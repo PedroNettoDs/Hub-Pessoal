@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image:
+    linear-gradient(rgba(12, 26, 44, 0.7), rgba(12, 26, 44, 0.7)),
+    url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+header {
+  padding: 2.5rem 1rem 1.5rem 1rem;
+}
+
+main {
+  padding: 1.5rem 0 2.5rem 0;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px 0 16px 0;
+  margin-right: 0;
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .profile-pic {
+    height: 300px;
+  }
+}
+
+.profile-info h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.profile-info h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #ADD8E6;
+}
+
+.profile-info p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  color: #B0C4DE;
+}
+
+.profile-info h2 i {
+  color: #ADD8E6;
+}
+
+.link-list {
+  max-width: 600px;
+  margin: 0 auto 0 auto;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.link-button {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+  background-color: #122b45;
+  border: 2px solid #ADD8E6;
+  border-radius: 16px 0 16px 0;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.link-button:hover {
+  background-color: #0f233a;
+}
+
+.link-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.link-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.video-section {
+  max-width: 800px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 1rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 0 16px 0;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  background: #0C1A2C;
+  color: #B0C4DE;
+  box-sizing: border-box;
+  text-align: center;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+}
