@@ -134,6 +134,31 @@
       margin: 0 auto;
     }
 
+    .video-section {
+      margin: 24px 0 32px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      background: #000;
+      box-shadow: 0 8px 25px rgba(0, 212, 255, 0.1);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     .links-section {
       display: flex;
       flex-direction: column;
@@ -403,6 +428,19 @@
           <i class="fas fa-arrow-right"></i>
         </div>
       </a>
+    </div>
+    <!-- Seção de Vídeo -->
+    <div class="video-section" aria-label="Video do YouTube">
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/Y1JSy4j9pPU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
     </div>
 
     <!-- Rodapé -->
